@@ -67,7 +67,7 @@ estate_nobles =
 	start_territory_weight = 50
 	
 	# Min autonomy in estate provinces
-	min_autonomy = 0
+	min_autonomy = 25
 	
 	# Estate cancels out the following multiplicative local autonomy effects:
 	autonomy_does_not_affect = local_manpower_modifier
