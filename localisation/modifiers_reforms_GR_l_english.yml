@@ -1,0 +1,27 @@
+﻿l_english:
+ Estate_Noble: "Noble Estate"
+ Estate_Burgher: "Burgher Estate"
+ Estate_Clergy: "Clergy Estate"
+ 
+ #T2.1
+ enforce_privileges_reform: "Enforce Privileges"
+ enforce_privileges_reform_desc: "Let us promote the noble privileges and reap the rewards."
+ mechanic_enables_independent_nobles_yes: "Privileges Promoted: §G+50%§! Manpower and §R+25%§! Min Autonomy in Noble Estate provinces."
+ Privileges_Promoted: "Mechanic §YPrivileges Promoted§!"
+ 
+ #T2.2
+ quash_noble_power_reform: "Abolish Privileges"
+ quash_noble_power_reform_desc: "Let us Abolish some of the privileges of the nobles and aquire some of their lands."
+ Privileges_Curtailed: "Mechanic §YPrivileges Curtailed§!"
+ 
+ #T2.3
+ clerical_privilege_reform: "Clerical Privilege"
+ clerical_privilege_reform_desc: "Let us grant legal exception to the clergy."
+ mechanic_enables_papal_delegation_yes: "Papal Delegation: §G+25§! Opinion with the Pope."
+ opinion_papal_delegation:0 "Papal Delegation"
+ 
+ #T2.4
+ titles_for_sale_reform: "Burgher Aristocracy"
+ titles_for_sale_reform_desc: "Let us sell monopolies to the merchants."
+ 
+ 

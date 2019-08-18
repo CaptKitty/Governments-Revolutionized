@@ -1,0 +1,27 @@
+on_revoke_estate_land = {
+	if = {
+		limit = {
+			has_province_modifier = Estate_Noble
+		}
+		remove_province_modifier = Estate_Noble
+	}
+}
+
+on_grant_estate_land = {
+	if = {
+		limit = {
+			has_province_modifier = revoked_estate_modifier
+		}
+		remove_province_modifier = revoked_estate_modifier
+	}
+	if = {
+		limit = {
+			has_estate = estate_nobles
+		}
+		add_province_modifier = {
+			name = "Estate_Noble"
+			duration = -1
+			hidden = yes
+		}
+	}
+}

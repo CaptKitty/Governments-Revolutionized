@@ -1,0 +1,19 @@
+#Estate Basics
+Estate_Noble = {
+	min_local_autonomy = 50
+}
+Estate_Burgher = {
+	min_local_autonomy = 25
+}
+Estate_Clergy = {
+	min_local_autonomy = 25
+}
+
+#T2 Reforms
+Privileges_Promoted = {
+	local_manpower_modifier = 0.50
+}
+Privileges_Curtailed = {
+	min_local_autonomy = -25
+}
+
