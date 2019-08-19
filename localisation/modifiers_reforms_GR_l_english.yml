@@ -24,6 +24,7 @@
  monopolies_for_sale_reform: "Burgher Privileges"
  monopolies_for_sale_reform_desc: "Let us sell monopolies to the merchants."
  mechanic_enables_burgher_privilege_sales_yes: "Privilege Sale: Allows you to sell City privileges to the burghers."
+ mechanic_enables_increased_burgher_loyalty_yes: "adds 10 to the burgher Base Loyalty."
  SALE_OF_PRIVILEGES:0 "Sell City Privileges"
  Burgher_Privileges_1: "Limited Town Rights"
  Burgher_Privileges_1_desc: "Hard earned privileges that will allow them to admit their local legal procedures themselves."

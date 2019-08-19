@@ -14,6 +14,7 @@ enforce_privileges_reform = {
 	allow_normal_conversion = yes
 	custom_attributes = {
 		enables_independent_nobles = yes #+25% Local Manpower, 25% Min Autonomy in Noble Estates
+		enables_decreased_burgher_loyalty = yes
 	}
 }
 #T2.2
@@ -29,7 +30,7 @@ clerical_privilege_reform = {
 	icon = "castle"
 	allow_normal_conversion = yes
 	potential = {
-		religion = catholicism
+		religion = catholic 
 	}
 	custom_attributes = {
 		enables_papal_delegation = yes #25 Opinion with the Pope
@@ -52,5 +53,6 @@ monopolies_for_sale_reform = {
 	allow_normal_conversion = yes
 	custom_attributes = {
 		enables_burgher_privilege_sales = yes #Allows Ducats for Privileges
+		enables_increased_burgher_loyalty = yes
 	}
 }
