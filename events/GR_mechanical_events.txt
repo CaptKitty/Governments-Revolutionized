@@ -369,6 +369,13 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 365
+		modifier = {
+			factor = 0.75
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 55
+			}
+		}
 	}
 	
 	immediate = {
