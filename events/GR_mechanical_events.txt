@@ -371,9 +371,18 @@ country_event = {
 		days = 365
 		modifier = {
 			factor = 0.75
+			NOT = {
+				estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 61
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
 			estate_loyalty = {
 				estate = estate_burghers
-				loyalty = 55
+				loyalty = 70
 			}
 		}
 	}
