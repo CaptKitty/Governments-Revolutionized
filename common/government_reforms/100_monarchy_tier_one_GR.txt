@@ -7,14 +7,13 @@ feudalism_reform = {
 	}
 }
 
-###T2
+###T2 A Matter of Privilege
 #T2.1
 enforce_privileges_reform = {
 	icon = "castle"
 	allow_normal_conversion = yes
 	custom_attributes = {
 		enables_independent_nobles = yes #+25% Local Manpower, 25% Min Autonomy in Noble Estates
-		enables_decreased_burgher_loyalty = yes
 	}
 }
 #T2.2
@@ -33,7 +32,7 @@ clerical_privilege_reform = {
 		religion = catholic 
 	}
 	custom_attributes = {
-		enables_papal_delegation = yes #25 Opinion with the Pope
+		enables_papal_delegation = yes #50 Opinion with the Pope
 	}
 }
 #T2.3b
@@ -56,3 +55,6 @@ monopolies_for_sale_reform = {
 		enables_increased_burgher_loyalty = yes
 	}
 }
+
+###T3
+

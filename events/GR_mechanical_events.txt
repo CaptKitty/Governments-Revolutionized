@@ -365,12 +365,16 @@ country_event = {
 
 	trigger = {
 		has_government_attribute = enables_increased_burgher_loyalty
+		estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 49
+		}
 	}
 	
 	mean_time_to_happen = {
 		days = 365
 		modifier = {
-			factor = 0.75
+			factor = 0.5
 			NOT = {
 				estate_loyalty = {
 					estate = estate_burghers

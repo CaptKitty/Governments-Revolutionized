@@ -12,9 +12,10 @@ Estate_Clergy = {
 #T2 Reforms
 Privileges_Promoted = {
 	local_manpower_modifier = 0.25
+	min_local_autonomy = 15
 }
 Privileges_Curtailed = {
-	min_local_autonomy = -10
+	min_local_autonomy = -15
 }
 Burgher_Autonomy_1 = {
 	min_local_autonomy = 15
