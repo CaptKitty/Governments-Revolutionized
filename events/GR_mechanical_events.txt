@@ -368,13 +368,13 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 30
+		days = 365
 	}
 	
 	immediate = {
 		add_estate_loyalty = {
 			estate = estate_burghers
-			loyalty = 0.1
+			loyalty = 1
 		}
 	}
 	
