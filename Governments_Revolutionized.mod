@@ -1,8 +1,11 @@
-name="Governments Expanded"
-path="mod/Governments_Expanded"
+name="Governments Revolutionized"
+path="mod/Governments_Revolutionized"
 dependencies={
 	"Missions Expanded"
 	"Beyond Typus 11.5"
+	"Extended Timeline"
+	"The Idea Variation"
+	"The Idea Variation Lite Version"
 }
 tags={
 	"Government Reforms"
@@ -13,5 +16,5 @@ tags={
 	"Events"
 	"Historical"
 }
-picture="GE_thumbnail_1_2.png"
+picture="GE_thumbnail_1_8.png"
 supported_version="1.28.*.*"
