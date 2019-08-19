@@ -3,10 +3,12 @@ feudalism_reform = {
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
+	custom_attributes = {
+	}
 }
 
-#T2
-
+###T2
+#T2.1
 enforce_privileges_reform = {
 	icon = "castle"
 	allow_normal_conversion = yes
@@ -14,6 +16,7 @@ enforce_privileges_reform = {
 		enables_independent_nobles = yes #+25% Local Manpower, 25% Min Autonomy in Noble Estates
 	}
 }
+#T2.2
 quash_noble_power_reform = {
 	icon = "castle"
 	allow_normal_conversion = yes
@@ -21,6 +24,7 @@ quash_noble_power_reform = {
 		enables_curtail_nobles = yes #-10% Min Autonomy in Noble Estates
 	}
 }
+#T2.3
 clerical_privilege_reform = {
 	icon = "castle"
 	allow_normal_conversion = yes
@@ -31,7 +35,8 @@ clerical_privilege_reform = {
 		enables_papal_delegation = yes #25 Opinion with the Pope
 	}
 }
-clerical_privilege_reform = {
+#T2.3b
+clerical_privilege_b_reform = {
 	icon = "castle"
 	allow_normal_conversion = yes
 	potential = {
@@ -41,10 +46,11 @@ clerical_privilege_reform = {
 		tolerance_own = 1
 	}
 }
-titles_for_sale_reform = {
+#T2.4
+monopolies_for_sale_reform = {
 	icon = "castle"
 	allow_normal_conversion = yes
-	modifiers = {
-		placed_merchant_power = 3
+	custom_attributes = {
+		enables_burgher_privilege_sales = yes #Allows Ducats for Privileges
 	}
 }

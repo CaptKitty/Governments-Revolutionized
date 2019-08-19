@@ -3,7 +3,7 @@ monarchy = {
 	reform_levels = {
 		feudalism_vs_autocracy = {
 			reforms = {
-				feudal_reform
+				feudalism_reform
 			}
 		}
 		a_matter_of_privilege = {
@@ -11,7 +11,7 @@ monarchy = {
 				enforce_privileges_reform
 				quash_noble_power_reform
 				clerical_privilege_reform
-				
+				monopolies_for_sale_reform
 			}
 		}
 		bureaucracy = {

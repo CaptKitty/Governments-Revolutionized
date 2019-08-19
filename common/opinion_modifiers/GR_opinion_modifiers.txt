@@ -1,0 +1,3 @@
+opinion_papal_delegation = {
+	opinion = 50
+}

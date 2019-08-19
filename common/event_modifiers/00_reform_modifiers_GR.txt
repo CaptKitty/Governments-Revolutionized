@@ -1,6 +1,6 @@
 #Estate Basics
 Estate_Noble = {
-	min_local_autonomy = 50
+	min_local_autonomy = 25
 }
 Estate_Burgher = {
 	min_local_autonomy = 25
@@ -16,4 +16,23 @@ Privileges_Promoted = {
 Privileges_Curtailed = {
 	min_local_autonomy = -25
 }
-
+Burgher_Autonomy_1 = {
+	min_local_autonomy = 15
+	local_autonomy = 0.05
+}
+Burgher_Privileges_1 = {
+	min_local_autonomy = 15
+	local_production_efficiency = 0.20
+	local_unrest = -2
+	local_autonomy = 0.05
+}
+Burgher_Autonomy_2 = {
+	min_local_autonomy = 35
+	local_autonomy = 0.10
+}
+Burgher_Privileges_2 = {
+	min_local_autonomy = 35
+	trade_goods_size_modifier = 0.25
+	local_defensiveness = 0.25
+	local_autonomy = 0.10
+}

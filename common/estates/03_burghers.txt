@@ -428,8 +428,7 @@ estate_burghers =
 		years_between_use = 10
 		
 		potential = {
-			NOT = { has_disaster = estate_church_disaster }
-			NOT = { has_disaster = estate_nobility_disaster }
+			always = no
 		}
 		
 		trigger = {
@@ -528,6 +527,136 @@ estate_burghers =
 			}
 		}
 	}
+	
+	interaction = {
+		name = "SALE_OF_PRIVILEGES"
+		icon = 6
+		
+		years_between_use = 10
+		
+		potential = {
+			NOT = { has_disaster = estate_church_disaster }
+			NOT = { has_disaster = estate_nobility_disaster }
+		}
+		
+		trigger = {
+			any_owned_province = { has_estate = estate_burghers }		
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_burghers
+							influence = 50
+						}	
+					}
+				}
+				add_years_of_income = 0.25
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 50
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_burghers
+							influence = 75
+						}	
+					}
+				}
+				add_years_of_income = 0.5
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 75
+					}
+					NOT = {
+						estate_influence = {
+							estate = estate_burghers
+							influence = 100
+						}	
+					}
+				}
+				add_years_of_income = 0.75
+			}
+			if = {
+				limit = {
+					has_government_attribute = enables_burgher_privilege_sales
+				}
+				every_owned_province = {
+					if = {
+						limit = {
+							has_estate = estate_burghers
+							NOT = { has_province_modifier = Burgher_Privileges_1 }
+						}
+						add_province_modifier = {
+							name = Burgher_Privileges_1
+							duration = 7300
+						}
+					}
+					else_if = {
+						limit = {
+							has_estate = estate_burghers
+							has_province_modifier = Burgher_Privileges_1
+						}
+						add_province_modifier = {
+							name = Burgher_Privileges_2
+							duration = 7300
+						}
+					}
+				}
+			}
+			else = {
+				every_owned_province = {
+					if = {
+						limit = {
+							has_estate = estate_burghers
+							NOT = { has_province_modifier = Burgher_Autonomy_1 }
+						}
+						add_province_modifier = {
+							name = Burgher_Autonomy_1
+							duration = 7300
+						}
+					}
+					else_if = {
+						limit = {
+							has_estate = estate_burghers
+							has_province_modifier = Burgher_Autonomy_1
+						}
+						add_province_modifier = {
+							name = Burgher_Autonomy_2
+							duration = 7300
+						}
+					}
+				}
+			}
+				
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 50
+					}	
+				}
+			}
+			modifier = {
+				factor = 0
+				treasury = 1
+			}
+		}
+	}
+	
 	interaction = {
 		name = "DEMAND_SUPPORT_BURGHERS"
 		icon = 3

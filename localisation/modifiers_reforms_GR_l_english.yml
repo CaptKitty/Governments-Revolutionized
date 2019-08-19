@@ -16,12 +16,16 @@
  
  #T2.3
  clerical_privilege_reform: "Clerical Privilege"
- clerical_privilege_reform_desc: "Let us grant legal exception to the clergy."
+ clerical_privilege_reform_desc: "Let us grant diplomatic exception to the clergy."
  mechanic_enables_papal_delegation_yes: "Papal Delegation: §G+25§! Opinion with the Pope."
  opinion_papal_delegation:0 "Papal Delegation"
  
  #T2.4
- titles_for_sale_reform: "Burgher Aristocracy"
- titles_for_sale_reform_desc: "Let us sell monopolies to the merchants."
- 
- 
+ monopolies_for_sale_reform: "Burgher Privileges"
+ monopolies_for_sale_reform_desc: "Let us sell monopolies to the merchants."
+ mechanic_enables_burgher_privilege_sales_yes: "Privilege Sale: Allows you to sell City privileges to the burghers."
+ SALE_OF_PRIVILEGES:0 "Sell City Privileges"
+ Burgher_Privileges_1: "Limited Town Rights"
+ Burgher_Privileges_1_desc: "Hard earned privileges that will allow them to admit their local legal procedures themselves."
+ Burgher_Privileges_2: "Expanded Town Rights"
+ Burgher_Privileges_2_desc: "Further Privileges that grant the city the right to build city walls, making the place hard to breach for hostile forces, foreign and domestic."

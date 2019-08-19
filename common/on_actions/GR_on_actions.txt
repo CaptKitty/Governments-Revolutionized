@@ -5,6 +5,18 @@ on_revoke_estate_land = {
 		}
 		remove_province_modifier = Estate_Noble
 	}
+	if = {
+		limit = {
+			has_province_modifier = Estate_Clergy
+		}
+		remove_province_modifier = Estate_Clergy
+	}
+	if = {
+		limit = {
+			has_province_modifier = Estate_Burgher
+		}
+		remove_province_modifier = Estate_Burgher
+	}
 }
 
 on_grant_estate_land = {
@@ -20,6 +32,26 @@ on_grant_estate_land = {
 		}
 		add_province_modifier = {
 			name = "Estate_Noble"
+			duration = -1
+			hidden = yes
+		}
+	}
+	if = {
+		limit = {
+			has_estate = estate_church
+		}
+		add_province_modifier = {
+			name = "Estate_Clergy"
+			duration = -1
+			hidden = yes
+		}
+	}
+	if = {
+		limit = {
+			has_estate = estate_burghers
+		}
+		add_province_modifier = {
+			name = "Estate_Burgher"
 			duration = -1
 			hidden = yes
 		}
